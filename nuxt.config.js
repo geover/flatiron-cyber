@@ -79,8 +79,7 @@ export default {
   dev: process.env.NODE_ENV !== 'production',
 
   generate: {
-    dir: 'public',
-    subFolders: false
+    fallback: true
   },
 
   // Auth module configuration:  https://auth.nuxtjs.org/
