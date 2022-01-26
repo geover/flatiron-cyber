@@ -76,6 +76,13 @@ export default {
     baseURL: process.env.API_BASE_URL,
   },
 
+  dev: process.env.NODE_ENV !== 'production',
+
+  generate: {
+    dir: 'public',
+    subFolders: false
+  },
+
   // Auth module configuration:  https://auth.nuxtjs.org/
   auth: {
     redirect: {
